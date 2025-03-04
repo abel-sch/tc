@@ -13,8 +13,8 @@ function App() {
   useEffect(() => {
     animate(0, 1, {
       repeat: Infinity,
-      repeatDelay: .2,
-      duration: 1.5,
+      repeatDelay: .1,
+      duration: .9,
       ease: easing,
       repeatType: 'reverse',
       onUpdate: latest => {
