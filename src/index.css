@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+    --default-font-family: 'Nohemi';
+    --font-nohemi: 'Nohemi';
+    --font-fraunces: 'Fraunces'
+}
+
+body { 
+    cursor: none;
+}
+
+@font-face {
+    font-family: 'Nohemi';
+    src: url(./assets/Nohemi-VF.woff2);
+}
+@font-face {
+    font-family: 'Fraunces';
+    src: url(./assets/Fraunces.woff2);
+}
+
+.font-fraunces {
+    margin-top: -.3em;
+    font-size: 28vw;
+}
+
+.dynamic-font-weight.font-fraunces {
+    font-variation-settings: "wght" calc(800 - 700 * var(--progress,0));
+}
+.dynamic-font-weight.font-nohemi {
+    font-variation-settings: "wght" calc(100 + 700 * var(--progress,0));
+}
